@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LISTA DOS LIVROS CADASTRADOS</title>
+</head>
+<body>
+    <h2>Lista dos Livros Cadastrados</h2>
+
+    <ul>
+     {% for Livro in lista %}
+         <li>{{ Livro.titulo }}: R$ {{ Livro.preco }}</li>
+     {% endfor %}
+     </ul>
+    <button><a href="{% url 'url_cadastro' %}"> NOVO </a></button>
+</body>
+</html>
